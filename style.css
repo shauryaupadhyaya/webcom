@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Manufacturing+Consent&family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Manufacturing+Consent&family=Pacifico&family=Story+Script&display=swap');
+
+html{
+    background-color: antiquewhite;
+}
+
+
+.curved-edge {
+  --c: 70px;
+  height: 200px;
+  width:1440px;;
+  aspect-ratio: 3/2;
+  mask: radial-gradient(60% var(--c) at bottom,#0000 calc(100% - 2px),#000);
+  background: #40C0CB;
+  border-bottom-width:5px;
+  border-bottom-style:solid;
+  border-bottom-color:aquamarine;
+}
+
+.our-team-btn{
+    padding-top: 20px;
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    background-color: #f6eddc;
+    color: #234459;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 8px 22px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(44,51,67,0.12);
+    transition: all 0.3s ease;
+}
+
+.our-team-btn:hover {
+    border: 1px solid #111827;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
+}
+
+h1{
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:40px;
+    position:relative;
+    bottom:200px;
+    left:20px;
+}
+
+
+
+body{
+    margin:0;
+}
+
+
+
+#welcome{
+    text-align:center;
+    padding:10px;
+    font-family: "Libertinus Keyboard", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    top:60px;
+    font-weight:1000;
+    font-size:60px;
+    width:600px;
+    height:60px;
+
+}
+
+
+
+#desc{
+    text-align:center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    top:5px;
+}
+
+
+
+#welcome::before{
+    content:"👋🏻"
+}
+
+
+
+#button{
+    font-family: "Roboto", sans-serif;
+    background-color: #4fa4ac;
+    color:white;
+    position:relative;
+    top:190px;
+    padding:5px;
+    font-size:25px;
+    width:200px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    border-top-right-radius:8px;
+    border-bottom-left-radius:8px;
+    transition: all 0.3s ease;
+}
+
+
+
+#link{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+#buttondiv{
+    text-align:center;
+}
+
+
+
+#button:hover{
+    font-size:26px;
+    background-color:#252424;
+    color: #ffffff;
+    border: 1px solid #111827;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+html {
+  background-color: antiquewhite;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.curved-edge {
+  --c: 70px;
+  height: 200px;
+  width: 100%;
+  max-width: 1440px;
+  aspect-ratio: 3 / 2;
+  mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000);
+  background: #40C0CB;
+  border-bottom: 5px solid aquamarine;
+  margin: 0 auto;
+  position: relative;
+}
+
+.our-team-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background-color: #f6eddc;
+  color: #234459;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  padding: 8px 22px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(44, 51, 67, 0.12);
+  transition: all 0.3s ease;
+}
+
+.our-team-btn:hover {
+  border: 1px solid #111827;
+  box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.25);
+  transform: scale(1.1);
+}
+
+h1 {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  position: relative;
+  bottom: 200px;
+  left: 20px;
+}
+
+.team-section {
+  margin: -120px auto 0 auto;
+  max-width: 1000px;
+  padding: 32px 16px 40px 16px;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 32px;
+  font-weight: 600;
+  color: #2b4c64;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.team-card {
+  background: #40C0CB;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(44, 51, 67, 0.10);
+  padding: 24px 18px;
+  width: 220px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 3px solid #fff;
+  background: #e5e7eb;
+}
+
+.team-card h3 {
+  margin: 8px 0 2px 0;
+  font-size: 1.2rem;
+  color: #234459;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 1rem;
+  color: #086177;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.team-card p {
+  font-size: 0.96rem;
+  color: #273238;
+  margin: 0 0 6px 0;
+}
