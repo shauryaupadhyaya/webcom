@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 
+@media screen and (max-width:600px){    
+}
+
 html {
   background-color: antiquewhite;
 }
@@ -11,39 +14,42 @@ body {
 }
 
 .curved-edge {
-  --c: 70px;
-  height: 200px;
-  width: 100%;
-  max-width: 1440px;
-  aspect-ratio: 3 / 2;
-  mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000);
-  background: #40C0CB;
-  border-bottom: 5px solid aquamarine;
-  margin: 0 auto;
-  position: relative;
+    --c: 70px;
+    height: 200px;
+    aspect-ratio: 3/2;
+    mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000);
+    background: #40C0CB;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: aquamarine;
+    margin-bottom: 0;
+    position: relative;
+    max-width:auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px 32px 0 32px;
+    gap: 12px;
 }
 
-.our-team-btn {
-  position: absolute;
-  top: 24px;
-  right: 32px;
-  background-color: #f6eddc;
-  color: #234459;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  padding: 8px 22px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(44, 51, 67, 0.12);
-  transition: all 0.3s ease;
+.side-btn {
+    background-color: #f6eddc;
+    color: #234459;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 8px 22px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(44,51,67,0.12);
+    transition: all 0.3s ease;
 }
 
-.our-team-btn:hover {
-  border: 1px solid #111827;
-  box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.25);
-  transform: scale(1.1);
+.side-btn:hover {
+    border: 1px solid #111827;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
 }
 
 h1 {
@@ -80,10 +86,15 @@ h1 {
 .team-card {
   background: #40C0CB;
   border-radius: 18px;
-  box-shadow: 0 2px 16px rgba(44, 51, 67, 0.10);
   padding: 24px 18px;
   width: 220px;
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover{
+  box-shadow: 0 2px 16px rgba(44, 51, 67, 0.10);
+  transform: scale(1.02);
 }
 
 .profile-img {
@@ -114,4 +125,10 @@ h1 {
   font-size: 0.96rem;
   color: #273238;
   margin: 0 0 6px 0;
+}
+
+
+.side-btn{
+  float:right;
+  margin-right:10px;
 }

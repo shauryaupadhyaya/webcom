@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Story+Script&display=swap');
 
+@media screen and (max-width:600px){
+    
+}
+
 html {
     background-color: antiquewhite;
 }
@@ -23,13 +27,15 @@ body {
     border-bottom-color: aquamarine;
     margin-bottom: 0;
     position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px 32px 0 32px;
+    gap: 12px;
 }
 
-.our-team-btn{
-    padding-top: 20px;
-    position: absolute;
-    top: 24px;
-    right: 32px;
+.side-btn {
     background-color: #f6eddc;
     color: #234459;
     font-family: 'Poppins', sans-serif;
@@ -43,11 +49,13 @@ body {
     transition: all 0.3s ease;
 }
 
-.our-team-btn:hover {
+.side-btn:hover {
     border: 1px solid #111827;
     box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.25);
     transform: scale(1.1);
 }
+
+
 
 h1 {
     font-family: "Story Script", sans-serif;
