@@ -157,6 +157,11 @@ body{
     transition: all 0.3s ease;
 }
 
+#linkteam{
+    color: white;
+    text-decoration: none;
+}
+
 #dropdownbutton p + p{
     margin-top: 10px;
 }
