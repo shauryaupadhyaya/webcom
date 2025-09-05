@@ -24,7 +24,7 @@
 
     <main>
         <div id="login-container">
-            <h2 id="login-title">Login</h2>
+            <h2 id="login-title">Get Started</h2>
             <p id="login-desc">Access your account to continue</p>
             <form id="login-form" action="#" method="POST" novalidate>
                 <div class="form-field">
@@ -38,9 +38,9 @@
                 </div>
 
                 <div class="extras">
-                    <label class="remember">
-                        <input type="checkbox" id="remember" name="remember" />
-                        Remember me
+                                        <label class="remember">
+                        <input type="checkbox" id="show-password" />
+                        Show password
                     </label>
                     <a href="#">Forgot password?</a>
                 </div>
@@ -49,5 +49,16 @@
             </form>
         </div>
     </main>
+    <script>
+      (function() {
+        var checkbox = document.getElementById('show-password');
+        var passwordInput = document.getElementById('password');
+        if (checkbox && passwordInput) {
+          checkbox.addEventListener('change', function() {
+            passwordInput.type = this.checked ? 'text' : 'password';
+          });
+        }
+      })();
+    </script>
 </body>
 </html>
