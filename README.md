@@ -7,3 +7,7 @@
  - float properties added by teammate
  - team page introduced
  - login box introduced
+ - register and login pages added
+ - show password added
+ - leaderboard page added
+ - main page fixed
