@@ -3,6 +3,8 @@
 
 html {
   background-color: antiquewhite;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -99,7 +101,6 @@ h1{
   margin: 0 0 6px 0;
 }
 
-/* Dropdown styles copied from main stylesheet */
 #dropdown{
     position:relative;
     text-align:center;
@@ -166,6 +167,3 @@ h1{
 #dropdowndiv:hover #dropdownbutton{
     display:block;
 }
-
-
-/* Remove float remnants */

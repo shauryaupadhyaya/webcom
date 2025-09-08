@@ -103,46 +103,6 @@ h1{
     text-decoration: none;
 }
 
-#class p {
-    display: inline-block;
-    padding: 5px 15px;
-    background-color: #40C0CB;
-    border-radius: 8px;
-    margin: 0 5px;
-    font-weight: bold;
-    font-size: 20px;
-    transition: all 0.3s ease;
-}
-
-body #class {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 16px;
-    text-align: center;
-    z-index: 100;
-}
-
-#class p:hover {
-    position: relative;
-    bottom: 5px;
-    color: #2c3343;
-    background-color: #4fa4ac;
-    font-weight: bold;
-    border: 1px solid #111827;
-    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.25);
-    transform: scale(1.1);
-}
-
-#class .on {
-    background-color: #128792;
-}
-
-#class .on:hover {
-    background-color: #4fa4ac;
-}
-
-
 main {
     min-height: calc(100vh - 200px);
     display: flex;
